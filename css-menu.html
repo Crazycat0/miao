@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="flashtime"content="1">
+
+  <title>Document</title>
+  <style>
+      * {
+  background-color: rgba(0,0,0,0.08);
+  box-shadow: inset 0 0 1px red;
+}
+html {
+  zoom: 2;
+}
+   ul{
+     max-width: 600px ;
+     margin:0;
+     padding:0;
+     list-style: none;
+   }
+   ul ul{
+     top:100%;
+     left: 0;
+   }
+    .menu li{
+     white-space: nowrap;
+     position: relative;
+   }
+    .menu li{
+     background-color: burlywood;
+   }
+   .menu > li{
+    display: inline-block;
+  }
+  .menu ul{
+    display: none;
+    position: absolute;
+  }
+  li:hover > ul{
+   display: block;
+  }
+  ul ul ul {
+    left:100%;
+    top:0;
+  }
+  </style>
+</head>
+
+<body>
+
+   <ul class="menu">
+     <li >一级菜单
+       <ul>
+         <li>菜单1</li>
+         <li>菜单2</li>
+         <li>菜单3</li>
+
+       </ul>
+     </li>
+  <li >二级菜单
+   <ul>
+   <li>菜单1</li>
+   <li>菜单2</li>
+   <li>菜单3</li>
+  </ul>
+</li>
+<li>三级菜单
+  <ul>
+    <li>菜单一</li>
+    <li>菜单二</li>
+    <li>菜单三</li>
+  </ul>
+</li>
+<li>四级菜单
+  <ul>
+  <li>UP</li>
+  <li>DOWN</li>
+  <li>LFET</li>
+  <li>RIGHT</li>
+</ul>
+</li>
+<li>五级菜单
+  <ul>
+  <li>RESTART</li>
+  <li>LOGOUT</li>
+  <li>POWEROFF</li>
+</ul>
+</li>
+
+
+</ul>
+
+
+
+
+</body>
+</html>
